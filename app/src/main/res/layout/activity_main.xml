@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/button">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="18dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMS BLASTER"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/pre"
+        android:layout_width="match_parent"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="150dp"
+
+        android:ems="10"
+        android:hint="Prefix"
+        android:textSize="24sp"
+        android:padding="8dp"
+        android:inputType="text"
+        android:background="@drawable/edit" />
+
+    <EditText
+        android:id="@+id/num"
+        android:layout_width="match_parent"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="8dp"
+
+        android:layout_marginLeft="32dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="First Number"
+        android:textSize="24sp"
+        android:padding="8dp"
+        android:inputType="number"
+        android:background="@drawable/edit" />
+
+    <EditText
+        android:id="@+id/inc"
+        android:layout_width="match_parent"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="60dp"
+        android:ems="10"
+        android:hint="Number Of SMSs"
+        android:layout_marginTop="8dp"
+        android:textSize="24sp"
+        android:padding="8dp"
+        android:inputType="number"
+        android:background="@drawable/edit" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="60dp"
+        android:text="Next"
+        android:onClick="Next"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="8dp"
+        android:textSize="32sp"
+        android:background="@drawable/button"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        />
+<!--    <Button-->
+<!--        android:id="@+id/pass"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_marginRight="32dp"-->
+<!--        android:layout_marginLeft="32dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:text="change password"-->
+<!--        android:onClick="changePass"-->
+<!--        android:padding="8dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginBottom="80dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:textSize="12sp"-->
+<!--        android:background="@drawable/button"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        />-->
+</LinearLayout>

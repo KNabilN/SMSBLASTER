@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UI.SMSender"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/button">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="18dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SMS BLASTER"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+    <EditText
+
+        android:layout_marginTop="150dp"
+        android:id="@+id/msg"
+        android:layout_width="match_parent"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="200dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Message"
+        android:textSize="24sp"
+        android:padding="8dp"
+        android:inputType="textMultiLine"
+        android:background="@drawable/edit" />
+
+    <Button
+        android:id="@+id/snd"
+        android:layout_width="match_parent"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="60dp"
+        android:text="Send"
+        android:layout_marginTop="8dp"
+        android:textSize="32sp"
+        android:background="@drawable/button"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        />
+    <Button
+        android:id="@+id/cnc"
+        android:layout_width="match_parent"
+        android:layout_marginRight="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_height="60dp"
+        android:text="Cancel"
+        android:layout_marginTop="8dp"
+        android:textSize="32sp"
+        android:background="@drawable/button"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        />
+</LinearLayout>
